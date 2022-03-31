@@ -1,12 +1,16 @@
 package com;
 
+import java.util.Arrays;
+
 /**
  * 堆排序，先将数组通过下沉变成最大堆或最小堆
  * 不稳定，O(nlogn)
  */
 public class Heap {
     public static void main(String[] args) {
-
+        int [] array = {1,5,2,0,7,5,10};
+        Heap.HeapSort(array);
+        System.out.println(Arrays.toString(array));
     }
 
     public static void HeapSort(int [] array) {
